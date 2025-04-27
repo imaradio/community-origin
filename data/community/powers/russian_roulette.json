@@ -1,0 +1,76 @@
+{
+	"type": "origins:active_self",
+	"name": "russian roulette",
+	"description": "press primary to gamble your life... if you dont die you get a ton of adrenaline",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:entity.generic.explode"
+			},
+			{
+				"type": "origins:spawn_particles",
+				"particle": { "type": "minecraft:campfire_signal_smoke" },
+				"count": 64,
+				"speed": 0.1,
+				"spread": {
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			{
+				"type": "origins:choice",
+				"actions": [
+					{
+						"element": {
+							"type": "origins:apply_effect",
+							"effects": [
+								{
+									"effect": "minecraft:speed",
+									"duration": 150,
+									"amplifier": 9,
+									"is_ambient": true,
+									"show_icon": false
+								},
+								{
+									"effect": "minecraft:strength",
+									"duration": 150,
+									"amplifier": 3,
+									"is_ambient": true,
+									"show_icon": false
+								}
+							]
+						},
+						"weight": 5
+					},
+					{
+						"element": {
+							"type": "origins:and",
+							"actions": [
+								{
+									"type": "origins:execute_command",
+									"command": "clear @s"
+								},
+								{
+									"type": "origins:execute_command",
+									"command": "kill @s"
+								}
+							]
+						},
+						"weight": 1
+					}
+				]
+			}
+		]
+	},
+	"hud_render": {
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+		"bar_index": 5
+	},
+	"cooldown": 200,
+	"key": {
+		"key": "key.origins.primary_active"
+	}
+}
