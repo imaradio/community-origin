@@ -1,6 +1,7 @@
 {
 	"powers": [
-		"community:taco_bell"
+		"community:taco_bell",
+		"community:russian_roulette"
 	],
 	"icon": "minecraft:diamond_horse_armor",
 	"order": 1,
