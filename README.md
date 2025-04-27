@@ -6,4 +6,4 @@ This origin will start out blank. Any person may make a Pull Request to add what
 
 PRs must be reviewed by _@imaradio_ (aka _@\_radio\__ on Discord) or _@musicalbench28_ (_@musicalbench282_ on Discord).
 
-You cannot edit the "Idea & Rules" section of the README, anything else is fair game.
+You cannot edit the "Idea & Rules" section of the README, or the LICENSE file. Anything else is fair game.
