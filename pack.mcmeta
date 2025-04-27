@@ -1,6 +1,12 @@
 {
-	"pack": {
-		"pack_format": 15,
-		"description": "An origin, made by a community."
-	}
+    "pack": {
+        "name": "Me when:",
+        "id": "this_is_chaos",
+        "pack_format": 15,
+        "version": "Start",
+        "authors": [
+            "The COMMUNITY"
+        ],
+        "description": "An origin pack for a community by a community"
+    }
 }
