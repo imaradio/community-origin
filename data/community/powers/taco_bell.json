@@ -1,0 +1,30 @@
+{
+	"type": "origins:active_self",
+	"name": "too much taco bell...",
+	"description": "bros ass is on fire",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:entity.puffer_fish.blow_out"
+			},
+			{
+				"type": "origins:block_action_at",
+				"block_action": {
+					"type": "origins:set_block",
+					"block": "minecraft:brown_carpet"
+				}
+			}
+		]
+	},
+	"hud_render": {
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+		"bar_index": 9
+	},
+	"cooldown": 20,
+	"key": {
+		"key": "key.sneak",
+		"continuous": true
+	}
+}
