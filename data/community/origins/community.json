@@ -1,5 +1,6 @@
 {
 	"powers": [
+		"community:help",
 		"community:taco_bell",
 		"community:russian_roulette",
 		"community:launcher"

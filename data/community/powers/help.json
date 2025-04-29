@@ -1,0 +1,16 @@
+{
+    "name": "Help",
+    "description": "tells you important info",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "tellraw @s [\"\",{\"text\":\"you're \",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"hope this helps\"}},{\"selector\":\"@s \",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"hope this helps\"}}]"
+    },
+    "cooldown": 0,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.loadToolbarActivator"
+    }
+}
