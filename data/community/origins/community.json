@@ -3,7 +3,8 @@
 		"community:help",
 		"community:taco_bell",
 		"community:russian_roulette",
-		"community:launcher"
+		"community:launcher",
+		"community:grass"
 	],
 	"icon": "minecraft:diamond_horse_armor",
 	"order": 1,
