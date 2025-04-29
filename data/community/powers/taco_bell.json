@@ -1,30 +1,57 @@
 {
-	"type": "origins:active_self",
+	"type": "origins:multiple",
 	"name": "too much taco bell...",
-	"description": "bros ass is on fire",
-	"entity_action": {
-		"type": "origins:and",
-		"actions": [
-			{
-				"type": "origins:play_sound",
-				"sound": "minecraft:entity.puffer_fish.blow_out"
-			},
-			{
-				"type": "origins:block_action_at",
-				"block_action": {
-					"type": "origins:set_block",
-					"block": "minecraft:brown_carpet"
+	"description": "bros ass is on fire.... expel.... and consiume,......",
+	
+	"expel": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:play_sound",
+					"sound": "minecraft:entity.puffer_fish.blow_out"
+				},
+				{
+					"type": "origins:block_action_at",
+					"block_action": {
+						"type": "origins:set_block",
+						"block": "minecraft:brown_carpet"
+					}
 				}
-			}
-		]
+			]
+		},
+		"hud_render": {
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+			"bar_index": 9
+		},
+		"cooldown": 20,
+		"key": {
+			"key": "key.sneak",
+			"continuous": true
+		}
 	},
-	"hud_render": {
-		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
-		"bar_index": 9
-	},
-	"cooldown": 20,
-	"key": {
-		"key": "key.sneak",
-		"continuous": true
+
+	"consume": {
+		"type": "origins:action_on_block_break",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:damage",
+					"amount": 2,
+					"damage_type": "minecraft:starve"
+				},
+				{
+					"type": "origins:feed",
+					"food": 1,
+					"saturation": 1
+				}
+			]
+		},
+		"block_condition": {
+			"type": "origins:block",
+			"block": "minecraft:brown_carpet"
+		}
 	}
 }
